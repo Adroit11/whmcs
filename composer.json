@@ -1,0 +1,34 @@
+{
+    "name": "adroit11/whmcs",
+    "description": "A laravel package for accessing WHMCS API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ogundiji Bolade",
+            "email": "kamponistullar@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adroit11\\Whmcs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adroit11\\Whmcs\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+      "laravel": {
+          "providers": [
+              "Adroit11\\Whmcs\\WhmcsServiceProvider"
+          ]
+      }
+  }
+}
