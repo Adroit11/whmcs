@@ -6,9 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
 class InstallWhmcs extends Command
-{
-    protected $hidden = true;
-    
+{   
     protected $signature = 'whmcs:install';
 
     protected $description = 'Install the WHMCS config';
@@ -55,7 +53,7 @@ class InstallWhmcs extends Command
         ];
 
         if ($forcePublish === true) {
-            $params['--force'] = '';
+            $params['--force'] = '--force';
         }
 
        $this->call('vendor:publish', $params);
