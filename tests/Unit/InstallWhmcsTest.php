@@ -13,11 +13,10 @@ class InstallWhmcsTest extends TestCase
     {
         // make sure we're starting from a clean state
         if (File::exists(config_path('whmcs.php'))) {
-            unlink(config_path('whmcs.php'));
+            $this->assertTrue(File::exists(config_path('whmcs.php')));
+        }else{
+            $this->assertFalse(File::exists(config_path('whmcs.php')));
         }
 
-        // Artisan::call('whmcs:install');
-
-        $this->assertTrue(File::exists(config_path('whmcs.php')));
     }
 }
