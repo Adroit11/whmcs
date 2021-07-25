@@ -5,7 +5,6 @@ namespace Adroit11\Whmcs\Tests\Unit;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Adroit11\Whmcs\Tests\TestCase;
-use Adroit11\Whmcs\Whmcs;
 
 class InstallWhmcsTest extends TestCase
 {
