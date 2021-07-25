@@ -55,7 +55,7 @@ class InstallWhmcs extends Command
         ];
 
         if ($forcePublish === true) {
-            $params['--force'] = '';
+            $params['--force'] = '--force';
         }
 
        $this->call('vendor:publish', $params);
