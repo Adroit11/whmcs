@@ -6,9 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
 class InstallWhmcs extends Command
-{
-    protected $hidden = true;
-    
+{   
     protected $signature = 'whmcs:install';
 
     protected $description = 'Install the WHMCS config';
