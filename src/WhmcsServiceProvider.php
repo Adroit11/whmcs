@@ -20,9 +20,9 @@ class WhmcsServiceProvider extends ServiceProvider
                 __DIR__.'/../config/whmcs.php' => config_path('whmcs.php'),
             ], 'config');
 
-        $this->commands([
-            InstallWhmcs::class,
-        ]);
+        // $this->commands([
+        //     InstallWhmcs::class,
+        // ]);
     }
   }
 }
