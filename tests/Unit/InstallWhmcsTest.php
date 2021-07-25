@@ -10,7 +10,7 @@ use Adroit11\Whmcs\Whmcs;
 class InstallWhmcsTest extends TestCase
 {
     /** @test */
-    public function testInstallCommand()
+    function the_install_command_copies_a_the_configuration()
     {
         // make sure we're starting from a clean state
         if (File::exists(config_path('whmcs.php'))) {
@@ -22,12 +22,5 @@ class InstallWhmcsTest extends TestCase
         Artisan::call('whmcs:install');
 
         $this->assertTrue(File::exists(config_path('whmcs.php')));
-    }
-
-    public function testInstantiated()
-    {
-        $instance = $this->app->make('whmcs');
-
-        $this->assertInstanceOf(Whmcs::class, $instance);
     }
 }
