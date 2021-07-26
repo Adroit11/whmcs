@@ -32,5 +32,6 @@
               "Adroit11\\Whmcs\\WhmcsServiceProvider"
           ]
       }
-  }
+  },
+  "minimum-stability": "stable"
 }
